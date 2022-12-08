@@ -16,11 +16,11 @@ window.onload = function() {
     onScanSuccess: function(result) {
       console.log('Scan Success', result);
       document.getElementById('message').textContent = result;
-      document.location.href = result;
+      location.href = result;
     },
     onScanError: function(error) {
       console.log('Scan Error', error);
-      document.getElementById('message').textContent = 'No QR Code found';
+      document.getElementById('message').textContent = 'ERROOR';
     }
   });
 }
